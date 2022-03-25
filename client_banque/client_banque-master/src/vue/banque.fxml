@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="196.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.Banque_Controlleur">
+   <children>
+      <Label fx:id="lbl_solde" layoutX="33.0" layoutY="68.0" text="Label" textFill="#e40000">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="111.0" text="Effectuer un virement de :" />
+      <TextField fx:id="textfield_virement" layoutX="195.0" layoutY="107.0" />
+      <Button fx:id="btn_valider" layoutX="374.0" layoutY="107.0" mnemonicParsing="false" onAction="#ajoutArgentCompte" prefHeight="25.0" prefWidth="136.0" text="Valider le virement" />
+      <Label fx:id="lbl_identite_compte" layoutX="33.0" layoutY="21.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_quitter" layoutX="374.0" layoutY="157.0" mnemonicParsing="false" onAction="#fermerClientBanque" prefHeight="25.0" prefWidth="136.0" text="Quitter" />
+   </children>
+</AnchorPane>

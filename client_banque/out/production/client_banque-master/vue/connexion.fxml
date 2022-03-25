@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="280.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.Connexion_controlleur">
+    <children>
+        <TextField fx:id="textfield_login" layoutX="30.0" layoutY="119.0" />
+        <Label layoutX="30.0" layoutY="96.0" text="Identifiant :" />
+        <Label layoutX="324.0" layoutY="96.0" text="Mot de passe :" />
+        <PasswordField fx:id="textfield_mdp" layoutX="325.0" layoutY="119.0" />
+        <Button fx:id="btn_connexion" layoutX="184.0" layoutY="165.0" mnemonicParsing="false" onAction="#connexionBanque" prefHeight="33.0" prefWidth="138.0" text="Connexion" />
+        <Label layoutX="120.0" layoutY="44.0" text="Connexion a votre banque :" textFill="RED">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <Label layoutX="171.0" layoutY="246.0" text="Vous n'avez pas de compte ?" />
+      <Button fx:id="btn_inscription" layoutX="356.0" layoutY="242.0" mnemonicParsing="false" onAction="#inscriptionClientBanque" prefHeight="25.0" prefWidth="138.0" text="Inscription" />
+    </children>
+</AnchorPane>

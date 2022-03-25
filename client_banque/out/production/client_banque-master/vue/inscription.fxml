@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.Inscription_Controleur">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <TextField fx:id="textfield_nom" layoutX="175.0" layoutY="107.0" prefHeight="25.0" prefWidth="290.0" />
+                <TextField fx:id="textfield_prenom" layoutX="175.0" layoutY="162.0" prefHeight="25.0" prefWidth="290.0" />
+                <TextField fx:id="textfield_login" layoutX="175.0" layoutY="225.0" prefHeight="25.0" prefWidth="290.0" />
+                <Button fx:id="btn_inscription" layoutX="274.0" layoutY="344.0" mnemonicParsing="false" onAction="#validerInscription" text="Inscription" />
+                <Label layoutX="224.0" layoutY="24.0" text="Inscrivez-vous a l'application" />
+                <Label layoutX="55.0" layoutY="111.0" text="Nom :" />
+                <Label layoutX="55.0" layoutY="166.0" text="Prénom :" />
+                <Label layoutX="55.0" layoutY="229.0" text="Login :" />
+                <Label layoutX="55.0" layoutY="290.0" text="Mot de passe :" />
+                <PasswordField fx:id="textfield_mdp" layoutX="175.0" layoutY="286.0" prefHeight="25.0" prefWidth="290.0" />
+            <ComboBox fx:id="combobox_banque" layoutX="175.0" layoutY="57.0" prefHeight="25.0" prefWidth="290.0" />
+            <Label layoutX="57.0" layoutY="61.0" text="Choix de la banque :" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
